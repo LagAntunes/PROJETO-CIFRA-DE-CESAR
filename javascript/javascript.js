@@ -116,7 +116,7 @@ botaoDecodificar.addEventListener("click", function(pararTexto2){
     pararTexto2.preventDefault();
 
     if(opçoesSelect.value === "CifraDeCesar") {
-        if(botaoCodificar.value === "Decodificar mensagem") {
+        if(botaoCodificar.innerText === "Decodificar mensagem") {
             resultado.innerText = decodificacaoDaMensagemCifra();
         }
         else {
@@ -124,7 +124,7 @@ botaoDecodificar.addEventListener("click", function(pararTexto2){
         }
     }
     else if(opçoesSelect.value === "Base64") {
-        if(botaoCodificar.value === "Decodificar mensagem") {
+        if(botaoCodificar.innerText === "Decodificar mensagem") {
             resultado.innerText = decodificacaoDaMensagemBase();
         }
         else {
