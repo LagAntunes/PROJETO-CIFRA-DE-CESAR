@@ -1,0 +1,144 @@
+/* início da formatação da página */
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+/* fim da formatação da página */
+
+/* início da formatação do fundo */
+html {
+    background-image: url("/imagens/romano.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 1em;
+}
+/* fim da formatação do fundo */
+
+/* início da formatação do conteúdo */
+.display-formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario {
+    width: 80%;
+}
+
+.formulario label {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: gold;
+    text-shadow: 2px 1px black;
+}
+
+.texto {
+    padding: 10px;
+    width: 45%;
+    border-radius: 20px;
+    border-color: goldenrod;
+    border-width: 2px;
+    color: goldenrod;
+    font-size: medium;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.decodificadores {
+    display: flex;
+    flex-direction: column;
+}
+
+.seletor {
+    width: 35%;
+    padding: 5px;
+    border-radius: 20px;
+    border-color: goldenrod;
+    border-width: 2px;
+    color: goldenrod;
+    font-size: medium;
+}
+
+#incrementoDisplay {
+    display: none;
+}
+
+#incremento {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#incremento h1 {
+    color: gold;
+    text-shadow: 1px 1px black;
+}
+
+.escolhas {
+    color: gold;
+    text-shadow: 2px 2px black;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.escolhas input {
+    margin-top: 30px;
+}
+
+#botoes {
+    display: none;
+    width: 50%;
+}
+
+#botoes button {
+    margin-top: 20px;
+    padding: 10px;
+    width: 40%;
+    border-radius: 20px;
+    border-color: goldenrod;
+    font-size: medium;
+    font-weight: bold;
+    color: goldenrod;
+    background-color: lightgoldenrodyellow;
+}
+
+#botoes button:hover {
+    border-color: lightgoldenrodyellow;
+    color: lightgoldenrodyellow;
+    background-color: goldenrod;
+    cursor: pointer;
+}
+
+#displayMensagem {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#mensagemFinal {
+    margin-top: 5px;
+    height: 90px;
+    width: 50%;
+    border-radius: 25px;
+    border-color: goldenrod;
+    border-width: 5px;
+    color: goldenrod;
+    font-size: medium;
+}
+
+#mensagemResultado {
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    border-color: goldenrod;
+    border-width: 5px;
+    border-style: solid;
+    background-color: white;
+}
+/* fim da formatação do conteúdo */

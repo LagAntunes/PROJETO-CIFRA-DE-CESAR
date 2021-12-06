@@ -3,20 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>Aprendizado Javascript - Cifra</title>
-    <link rel="stylesheet" href="/estilos/estilos.css">
+    <link rel="stylesheet" href="./estilos/estilos.css">
 </head>
 <body>
-    <form>
-        <label>Digite sua mensagem aqui:</label><br>
-        <input type="text"><br><br>
+    <section class="display-formulario">
+        <form class="formulario">
+            <div class="titulo">
+                <label>Digite sua mensagem aqui:</label><br>
+                <input type="text" class="texto" id="escrita" name="escrita" placeholder="Digite sua mensagem aqui..."><br><br>
+            </div>
 
-        <input type="radio" id="cifra" value="Cifra de César" name="base">
-        <label>Cifra de César</label>
+            <div class="decodificadores">
+                <label>Escolha o tipo de codificação:</label><br>
+                <select class="seletor" id="opçoes">
+                    <option value="" disabled selected hidden>Escolha uma opção:</option>
+                    <option value="CifraDeCesar" id="cifra">Cifra de César</option>
+                    <option value="Base64" id="base">Base 64</option>
+                </select>
 
-        <input type="radio" id="base64" value="base64" name="base">
-        <label>base64</label>
-    </form>
+                <div id="incrementoDisplay">
+                <div id="incremento">
+                    <h1>Escolha o incremento da criptografia:</h1>
+                    <input type="number" id="incrementoCifra">
+                </div>
+                </div>
 
+                <div class="escolhas">
+                    <input type="radio" name="escolha" onclick="botao1()"> Codificar<br>
+                    <input type="radio" name="escolha" onclick="botao2()"> Decodificar
+                </div>
+
+                <div id="botoes">
+                    <button id="Codificar" value="Codificar mensagem">Codificar mensagem</button>
+                    <button id="Decodificar" value="Decodificar mensagem">Decodificar mensagem</button>
+                </div>
+
+                <div id="displayMensagem">
+                    <label id="texto-mensagem">Sua mensagem diz:</label><br>
+                    <p id="mensagemResultado"></p>
+                </div>
+            </div>
+        </form>
+    </section>
     <script src="/javascript/javascript.js"></script>
 </body>
 </html>
+
+<!--
+    Projeto baseado nos seguintes guias e vídeos:
+
+    1 - https://www.youtube.com/watch?v=utiLWBXmNQU&ab_channel=TecNoz
+    2 - https://www.youtube.com/watch?v=XlwprQuug6c&ab_channel=CriptografiasClassicasparaDevs
+    3 - https://stackoverflow.com/questions/44232645/caesar-cipher-in-javascript
+    4 - https://www.codegrepper.com/code-examples/javascript/Caesar+cipher+js
+    5 - https://gist.github.com/EvanHahn/2587465
+    
+    Alguns conceitos foram debatidos também durante o encontro de alguns integrantes da turma no Discord.
+-->
